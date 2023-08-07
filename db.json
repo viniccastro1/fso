@@ -1,0 +1,46 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "John",
+      "isImportant": true,
+      "number": "+55 21 923456789"
+    },
+    {
+      "id": "2",
+      "name": "Alice",
+      "isImportant": true,
+      "number": "+1 555 1234567"
+    },
+    {
+      "id": "3",
+      "name": "David",
+      "isImportant": false,
+      "number": "+44 20 71234567"
+    },
+    {
+      "id": "4",
+      "name": "Emily",
+      "isImportant": true,
+      "number": "+61 2 87654321"
+    },
+    {
+      "id": "5",
+      "name": "Michael",
+      "isImportant": false,
+      "number": "+1 987 6543210"
+    },
+    {
+      "name": "Contact",
+      "isImportant": false,
+      "number": "+00 00 00000 0000",
+      "id": "Cn1hP5C"
+    },
+    {
+      "name": "Contact",
+      "isImportant": false,
+      "number": "+00 00 00000 0000",
+      "id": "ENWqaCP"
+    }
+  ]
+}

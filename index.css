@@ -1,0 +1,25 @@
+:root {
+    --background: #FFFFC7;
+    --primary: #473335;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.card {
+    background-color: #E3BAC6;
+    color: var(--primary);
+    width: 100%;
+    max-width: 17em;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px var(--primary);
+}

@@ -1,0 +1,32 @@
+.card--not-important {
+    opacity: .75;
+}
+
+.card_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.card-pic__pic {
+    width: 8em;
+    height: 8em;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+.card-name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.card-number {
+    font-size: 1.1em;
+}
