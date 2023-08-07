@@ -1,9 +1,9 @@
 import axios from "axios"
 
-const SERVER_URL = 'http://localhost:3001/contacts'
+const CONTACTS_URL = 'http://localhost:3001/contacts'
 
 const getAll = () => {
-  return axios.get(SERVER_URL)
+  return axios.get(CONTACTS_URL)
     .then(res => res.data)
 }
 
@@ -13,17 +13,21 @@ const create = () => {
     isImportant: false,
     number: "+00 00 00000 0000"
   }
-  return axios.post(SERVER_URL, newContact)
+  return axios.post(CONTACTS_URL, newContact)
     .then(res => res.data)
 }
 
 const toggleImportance = (id) => {
-  const url = SERVER_URL + '/' + id;
-  return axios.get(url)
+  return axios.get(`${CONTACTS_URL}/${id}`)
     .then(res => {
       const updatedNote = { ...res.data, isImportant: !res.data.isImportant };
-      return axios.put(url, updatedNote)
+      return axios.put(`${CONTACTS_URL}/${id}`, updatedNote)
     })
 }
 
-export default { getAll, create, toggleImportance }
+const deleteContact = (id) => {
+  return axios.delete(`${CONTACTS_URL}/${id}`)
+    .then(res => res)
+}
+
+export default { getAll, create, toggleImportance, delete: deleteContact }

@@ -13,13 +13,20 @@ function App() {
       .then(res => setContacts(res));
   }, [])
 
-  const createContacts = () => {
+  const createContact = () => {
     contactsServices.create()
       .then(res => {
         setContacts(prevState => {
           return [...prevState, res]
         })
       });
+  }
+
+  const deleteContact = (id) => {
+    contactsServices.delete(id)
+      .then(() => {
+        setContacts(contacts.filter(e => e.id !== id))
+      })
   }
 
   const toggleImportance = (id) => {
@@ -34,11 +41,15 @@ function App() {
       <div className={styles["grid-container"]}>
         {contacts?.map(contact =>
           <div className={styles["grid-element"]} key={contact.id}>
-            <Card contact={contact} onClick={() => toggleImportance(contact.id)} />
+            <Card
+              contact={contact}
+              onDelete={() => deleteContact(contact.id)}
+              onToggleImportance={() => toggleImportance(contact.id)}
+            />
           </div>
         )}
         <div className={styles["grid-element"]}>
-          <AddCard onClick={createContacts} />
+          <AddCard onClick={createContact} setContacts={setContacts} />
         </div>
       </div>
     </>

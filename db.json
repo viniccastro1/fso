@@ -7,15 +7,9 @@
       "number": "+55 21 923456789"
     },
     {
-      "id": "2",
-      "name": "Alice",
-      "isImportant": true,
-      "number": "+1 555 1234567"
-    },
-    {
       "id": "3",
       "name": "David",
-      "isImportant": false,
+      "isImportant": true,
       "number": "+44 20 71234567"
     },
     {
@@ -27,20 +21,20 @@
     {
       "id": "5",
       "name": "Michael",
-      "isImportant": false,
+      "isImportant": true,
       "number": "+1 987 6543210"
     },
     {
       "name": "Contact",
-      "isImportant": false,
+      "isImportant": true,
       "number": "+00 00 00000 0000",
-      "id": "Cn1hP5C"
+      "id": "WBC93_K"
     },
     {
       "name": "Contact",
-      "isImportant": false,
+      "isImportant": true,
       "number": "+00 00 00000 0000",
-      "id": "ENWqaCP"
+      "id": "XJcK--u"
     }
   ]
 }

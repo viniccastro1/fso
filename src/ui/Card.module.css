@@ -1,32 +1,48 @@
+.contact-card:hover .card-actions {
+  visibility: visible;
+}
+
 .card--not-important {
-    opacity: .75;
+  opacity: .75;
 }
 
 .card_content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-pic {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
 }
 
 .card-pic__pic {
-    width: 8em;
-    height: 8em;
-    background-color: var(--primary);
-    border-radius: 50%;
+  width: 8em;
+  height: 8em;
+  background-color: var(--primary);
+  border-radius: 50%;
 }
 
 .card-name {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .card-number {
-    font-size: 1.1em;
+  font-size: 1.1em;
+}
+
+.card-actions {
+  visibility: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-grow: 1;
+  box-sizing: border-box;
+  width: 100%;
+  padding: .3em;
+  gap: 4px;
 }
